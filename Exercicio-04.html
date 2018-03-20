@@ -1,0 +1,21 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercicio-04</title>
+  </head>
+  <body>
+    <h1>Escreva uma função que receba um parâmetro e informe se o mesmo é ou não um número inteiro.</h1>
+    <script>
+      function VerificacaoSeONumeroEInteiroOuNao(parametro){
+        if (parametro % 2 == 0 || parametro % 2 == 1){
+          alert("Parâmetro é inteiro!");
+        }else{
+          alert("Parâmetro é string!");
+        }
+      }
+      var parametro = prompt("Digite o parametro que gostaria de saber se é inteiro ou não.");
+      parametro = parseInt(parametro);
+      var resultado = VerificacaoSeONumeroEInteiroOuNao(parametro);
+    </script>
+  </body>
+</html>

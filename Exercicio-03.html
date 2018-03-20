@@ -1,0 +1,21 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercicio-03</title>
+  </head>
+  <body>
+    <h1> Escreva uma função que receba um número, via prompt, e alerte se o número é par ou impar. </h1>
+    <script>
+      function VerificacaoSeONumeroEParOuImpar(numero){
+        if (numero % 2 == 0){
+          alert("Número é par!");
+        }else{
+          alert("Número é impar!");
+        }
+      }
+      var numero = prompt("Digite o número que gostaria de saber se é par ou impar.");
+      numero = parseInt(numero);
+      var resultado = VerificacaoSeONumeroEParOuImpar(numero);
+    </script>
+  </body>
+</html>
