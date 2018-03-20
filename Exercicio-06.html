@@ -1,0 +1,35 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercicio-06</title>
+  </head>
+  <body>
+    <h1> Escreva uma função para calcular e alertar o número de lâmpadas necessárias para
+      iluminar um determinado cômodo de uma residência. Dados de entrada: a potência da
+      lâmpada utilizada (em watts), as dimensões (largura e comprimento, em metros) do
+      cômodo. Considere que a potência necessária é de 18 watts por metro quadrado.
+      As entradas devem ser inputadas via prompt e não devem aceitar valores não numéricos. </h1>
+    <script>
+      function VerificarSeENumero(watts, dimensoes){
+        if (watts % 2 == 0 || watts % 2 == 1){
+          if (dimensoes % 2 = 0 || dimensoes %2 = 1){
+            var resultado = CalculoQuantLampadas(watts, dimensoes);
+          }
+        }else{
+          alert("Parâmetro inválido!");
+        }
+      }
+      function CalculoQuantLampadas(watts, dimensoes){
+        var total;
+        total = dimensoes*18;
+        total = total/watts;
+        alert("Quantidade de lâmpadas " +total);
+      }
+      var watts = prompt("Digite a potencia da lâmpada");
+      watts = parseInt(watts);
+      var dimensoes = prompt ("Digite a dimensão do comôdo.");
+      dimensoes = parseInt(dimensoes);
+      var verificar = VerificarSeENumero(watts, dimensoes);
+    </script>
+  </body>
+</html>
